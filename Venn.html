@@ -1,0 +1,53 @@
+<!doctype html>
+    <head>
+
+        <title>Spousal Violence Venn</title>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+        <link href='https://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <style>
+            body {
+                font-family: 'Quicksand', sans-serif;
+                font-weight: 700;
+                font-size : 14px;
+                margin: 2% 2% 2% 2%;
+            }
+
+           .venntooltip {
+                font-size : 12px;
+                position: absolute;
+                text-align: center;
+                width: 150px;
+                height: 85px;
+                background: #333;
+                color: #fff;
+                opacity: 0.7;
+                padding: 2px;
+                border: 0px;
+                border-radius: 8px;
+                opacity: 0;
+            }
+
+            #venn_one svg text{
+              fill: black;
+              font-size: 16px;
+            }
+
+        </style>
+        <script src="./venn.js"></script>
+    </head>
+
+    <body>
+      <div id="container">
+          <div id="venn_one" style=float:left>
+              <h3>Different forms of Spousal Violence against ever married women are related</h3>
+          </div>
+      </div>
+      <script src="./vennDraw.js"></script>
+    </body>
+</html>
